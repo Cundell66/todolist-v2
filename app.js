@@ -7,6 +7,7 @@ import _ from "lodash";
 import {password} from "./MongoDB.js";
 
 const app = express();
+const PORT = process.env.PORT || 3030;
 
 app.set('view engine', 'ejs');
 
@@ -133,6 +134,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen("https://capstone.cundell.com/todolist", function() {
-  console.log("Server started on port todolost");
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
