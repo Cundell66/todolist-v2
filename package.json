@@ -16,7 +16,7 @@
     "mongoose": "^7.4.2"
   },
   "engines": {
-    "node": ">=14 <15"
+    "node": "20.3.1"
   },
   "keywords": [],
   "description": ""
