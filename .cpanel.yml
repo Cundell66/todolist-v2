@@ -2,8 +2,6 @@
 deployment:
       tasks:
         - export DEPLOYPATH=/home/natclwow/repositories/todolist-v2
-#        - /bin/cp <file_name> $DEPLOYPATH #Copy specific file to destination from root
-#       - /bin/cp /<sub_folder>/<file_name> $DEPLOYPATH #copy specific file from source sub folder
-        - /bin cp * $DEPLOYPATH #copy all from root 
-        - /bin cp /views/* $DEPLOYPATH #copy all from sub folder root
-        - /bin cp /public/css/* $DEPLOYPATH #copy all from sub folder root
+        - /bin cp * $DEPLOYPATH 
+        - /bin cp /views/* $DEPLOYPATH
+        - /bin cp /public/css/* $DEPLOYPATH
